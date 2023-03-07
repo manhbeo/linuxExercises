@@ -11,7 +11,7 @@ cat "Property_Tax_Roll.csv" |
       done;
 
      echo sum=$sum;
-     bc <<EOF
-"average="
-EOF
+     bc <<EOF 
+        "average="
+     EOF
      echo "scale=6; $sum/ $count" | bc; }
